@@ -1,0 +1,58 @@
+.Container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .Card {
+    height: 600px;
+    width: 400px;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: filter 0.3s ease;
+    filter: brightness(0.8);
+    opacity: 0; 
+    transform: translateY(20px);
+    animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  }
+  
+  .CardOne {
+    background-image: url('/images/andarduft_gummies.png');
+    animation-delay: 0.5s;
+  }
+  
+  .CardTwo {
+    background-image: url('/images/andarduft_tea.png');
+    animation-delay: 1s;
+  }
+  
+  .CardThree {
+    background-image: url('/images/andarduft_skincare.png');
+    animation-delay: 1.5s;
+  }
+  
+  .CardFour {
+    background-image: url('/images/andarduft_essential_oil.png');
+    animation-delay: 2s;
+  }
+  
+  .Card:hover {
+    filter: brightness(1);
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }  
+}
