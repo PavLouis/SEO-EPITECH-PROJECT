@@ -5,12 +5,13 @@
 
 .Title {
     display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
+    margin-left: 40px;
+    align-items: left;
+    text-align: left;
+    justify-content: left;
     margin-top: 80px;
     margin-bottom: 60px;
     font-family: "TimesNewLightItalic", sans-serif;
     letter-spacing: -.186rem;
-    font-size: 56px;
+    font-size: 86px;
 }
