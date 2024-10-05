@@ -1,65 +1,82 @@
 .Container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 420px;
-    justify-content: space-around;
-    height: 100vh;
-    width: 100vw;
-    z-index: -1;
-    transition: all 0.5s ease-in-out;
-    background: linear-gradient(to bottom, #162F0F, #3A7C27);
-  }
-  
-  .Card {
-    height: 600px;
-    width: 400px;
-    border-radius: 5px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: filter 0.3s ease;
-    filter: brightness(0.8);
-    opacity: 0; 
-    transform: translateY(20px);
-    animation-name: fadeIn;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 420px;
+  justify-content: space-around;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  transition: all 0.5s ease-in-out;
+  background: linear-gradient(to bottom, #162F0F, #3A7C27);
+}
+
+.Card {
+  height: 600px;
+  width: 400px;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: filter 0.3s ease;
+  filter: brightness(0.8);
+  opacity: 0; /* Start hidden */
+  transform: translateY(20px); /* Initial position for effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Individual background images */
+.CardOne {
+  background-image: url('/images/andarduft_gummies.png');
+}
+
+.CardTwo {
+  background-image: url('/images/andarduft_tea.png');
+}
+
+.CardThree {
+  background-image: url('/images/andarduft_skincare.png');
+}
+
+.CardFour {
+  background-image: url('/images/andarduft_essential_oil.png');
+}
+
+.Card:nth-child(1) {
+  animation-delay: 0s; /* No delay for the first card */
+}
+
+.Card:nth-child(2) {
+  animation-delay: 0.7s; /* No delay for the first card */
+}
+
+.Card:nth-child(3) {
+  animation-delay: 1.4s; /* No delay for the first card */
+}
+
+.Card:nth-child(4) {
+  animation-delay: 2s; /* No delay for the first card */
+}
+
+.Card:hover {
+  filter: brightness(1);
+}
+
+/* New class for triggering the animation */
+.fadeIn {
+  animation-name: fadeIn;
   animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-out;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-  }
-  
-  .CardOne {
-    background-image: url('/images/andarduft_gummies.png');
-    animation-delay: 0.5s;
-  }
-  
-  .CardTwo {
-    background-image: url('/images/andarduft_tea.png');
-    animation-delay: 1s;
-  }
-  
-  .CardThree {
-    background-image: url('/images/andarduft_skincare.png');
-    animation-delay: 1.5s;
-  }
-  
-  .CardFour {
-    background-image: url('/images/andarduft_essential_oil.png');
-    animation-delay: 2s;
-  }
-  
-  .Card:hover {
-    filter: brightness(1);
-  }
+}
 
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-      transform: translateY(40px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }  
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
