@@ -19,7 +19,12 @@ function AboutUs() {
 export default function HomeVideo() {
     return (
         <div className={styles.Container}>
-            <AboutUs/>
+             <video autoPlay loop muted className={styles.BackgroundVideo}>
+                <source src="/videos/home_video.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                
+             </video>
+             <AboutUs/>
         </div>
     );
 }

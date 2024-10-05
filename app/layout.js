@@ -1,8 +1,9 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import HomePageCards from './HomePage/HomePageCards';
-import HomeTitle from "./HomePage/HomeTitle";
 import HomeVideo from "./HomePage/HomeVideo";
+import Footer from "./Footer";
+import { CLIENT_STATIC_FILES_RUNTIME_POLYFILLS_SYMBOL } from "next/dist/shared/lib/constants";
 
 export const metadata = {
   title: "Create Next App",
@@ -12,9 +13,9 @@ export const metadata = {
 function Home() {
   return (
     <div>
-      <HomeTitle/>
-      <HomePageCards/>
       <HomeVideo/>
+      <HomePageCards/>
+      <Footer/>
     </div>
   );
 }
