@@ -1,8 +1,9 @@
 "use client";
 
 import React, { useEffect } from 'react';
-import styles from "../css/HomePageCards.module.css"; 
-export default function HomePageCards() {
+import styles from "../css/HomePageCards.module.css";
+
+export default function AboutUs() {
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -15,7 +16,7 @@ export default function HomePageCards() {
           }
         });
       },
-      { threshold: 0.4 } 
+      { threshold: 0.4 }
     );
 
     const cards = document.querySelectorAll(`.${styles.Card}`);
@@ -30,10 +31,7 @@ export default function HomePageCards() {
 
   return (
     <div className={styles.Container}>
-      <div className={`${styles.Card} ${styles.CardOne}`}></div>
-      <div className={`${styles.Card} ${styles.CardTwo}`}></div>
-      <div className={`${styles.Card} ${styles.CardThree}`}></div>
-      <div className={`${styles.Card} ${styles.CardFour}`}></div>
+      
     </div>
   );
 }
