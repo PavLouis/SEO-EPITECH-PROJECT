@@ -1,31 +1,41 @@
 .Container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   margin-top: 420px;
-  justify-content: space-around;
   height: 100vh;
   width: 100vw;
   z-index: -1;
-  transition: all 0.5s ease-in-out;
-  background: linear-gradient(to bottom, #162F0F, #3A7C27);
+  justify-content: space-between;
+  background: linear-gradient(to bottom, #0E1F0A, #0E1F0A);
+}
+
+.SubContainer {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-between !important;
 }
 
 .Card {
-  height: 600px;
+  height: 700px;
   width: 400px;
   border-radius: 5px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  transition: filter 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease !important; /* Fixed the transition timing */
   filter: brightness(0.8);
   opacity: 0; /* Start hidden */
-  transform: translateY(20px); /* Initial position for effect */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  margin-left: -20px;
 }
 
-/* Individual background images */
+.Card:hover {
+  filter: brightness(1);
+  transform: translateY(-30px) !important; /* Apply hover transform */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
 .CardOne {
   background-image: url('/images/andarduft_gummies.png');
 }
@@ -43,26 +53,21 @@
 }
 
 .Card:nth-child(1) {
-  animation-delay: 0s; /* No delay for the first card */
+  animation-delay: 0s; 
 }
 
 .Card:nth-child(2) {
-  animation-delay: 0.7s; /* No delay for the first card */
+  animation-delay: 0.7s;
 }
 
 .Card:nth-child(3) {
-  animation-delay: 1.4s; /* No delay for the first card */
+  animation-delay: 1.4s; 
 }
 
 .Card:nth-child(4) {
-  animation-delay: 2s; /* No delay for the first card */
+  animation-delay: 2s;
 }
 
-.Card:hover {
-  filter: brightness(1);
-}
-
-/* New class for triggering the animation */
 .fadeIn {
   animation-name: fadeIn;
   animation-duration: 1s;
@@ -70,13 +75,19 @@
   animation-timing-function: ease-out;
 }
 
+.Card.show { 
+  opacity: 1; /* Ensure fully visible */
+  transform: translateY(0); /* Reset to original position */
+  animation: none; /* Prevent any further animations */
+}
+
 @keyframes fadeIn {
   0% {
-    opacity: 0;
-    transform: translateY(40px);
+    opacity: 0; /* Start hidden */
+    transform: translateY(40px); /* Start lower */
   }
   100% {
-    opacity: 1;
-    transform: translateY(0);
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* End at original position */
   }
 }

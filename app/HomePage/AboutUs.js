@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect } from 'react';
-import styles from "../css/HomePageCards.module.css";
+import styles from "../css/AboutUs.module.css";
 
 export default function AboutUs() {
   useEffect(() => {
@@ -9,7 +9,6 @@ export default function AboutUs() {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            console.log(`Card ${entry.target.className} is visible`);
             
             entry.target.classList.add(styles.fadeIn);
             observer.unobserve(entry.target); 
@@ -19,13 +18,8 @@ export default function AboutUs() {
       { threshold: 0.4 }
     );
 
-    const cards = document.querySelectorAll(`.${styles.Card}`);
-    if (cards.length === 0) {
-      console.warn("No cards found to observe. Check the class names or styling.");
-    }
-    
-    cards.forEach((card) => observer.observe(card));
-
+    const texts = document.querySelectorAll(`.${styles.Card}`);
+    texts.forEach((text) => observer.observe(text));
     return () => observer.disconnect();
   }, []);
 

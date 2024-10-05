@@ -4,6 +4,7 @@ import HomePageCards from './HomePage/HomePageCards';
 import HomeVideo from "./HomePage/HomeVideo";
 import Footer from "./Footer";
 import { CLIENT_STATIC_FILES_RUNTIME_POLYFILLS_SYMBOL } from "next/dist/shared/lib/constants";
+import AboutUs from "./HomePage/AboutUs";
 
 export const metadata = {
   title: "Create Next App",
@@ -15,6 +16,7 @@ function Home() {
     <div>
       <HomeVideo/>
       <HomePageCards/>
+      <AboutUs/>
       <Footer/>
     </div>
   );
