@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://trolls-mint-essentials.com/
+
+# Sitemaps
+Sitemap: https://trolls-mint-essentials.com/sitemap.xml
