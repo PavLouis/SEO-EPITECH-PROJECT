@@ -6,26 +6,25 @@ import TitleStyles from "../css/HomeTitle.module.css";
 
 export default function AboutUs() {
   useEffect(() => {
-    // Set up Intersection Observer
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add(styles.fadeIn); // Add fade-in animation class
-            observer.unobserve(entry.target); // Stop observing once animation is triggered
+            entry.target.classList.add(styles.fadeIn); 
+            observer.unobserve(entry.target); 
           }
         });
       },
-      { threshold: 0.7 } // Trigger animation when 40% of element is visible
+      { threshold: 0.7 } 
     );
 
-    // Select elements to animate
+    
     const elementsToAnimate = document.querySelectorAll(`.${styles.TitleHeader}, .${styles.Title}, .${styles.Button}`);
 
-    // Attach observer to each element
+   
     elementsToAnimate.forEach((element) => observer.observe(element));
 
-    return () => observer.disconnect(); // Cleanup observer on component unmount
+    return () => observer.disconnect(); 
   }, []);
 
   return (

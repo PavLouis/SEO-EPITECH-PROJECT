@@ -26,7 +26,39 @@
   box-shadow: 0 16px 32px rgba(0, 0, 0, 0.7);
   transition: filter 0.3s ease-in-out;
   filter: brightness(0.9);
+  border-radius: 8px;
 
+}
+
+@media only screen and (max-width: 768px) {
+  .SubContainer {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100%;
+    
+  }
+
+  .TeamPic {
+    width: auto;
+    height: 400px;
+  }
+
+  .Header {
+    margin-left: 0px !important;
+    width: auto !important;
+  }
+
+  .TitleHeader {
+    font-size: 25px !important;
+    opacity: 1 !important;
+    margin-bottom: 20px !important;
+  }
+
+  .Title {
+    opacity: 1 !important;
+    font-size: 18px !important;
+    width: 350px;
+  }
 }
 
 .TeamPic:hover {
@@ -42,8 +74,8 @@
     background-repeat: no-repeat;
     transition: filter 0.3s ease;
     filter: brightness(0.8);
-    opacity: 0; /* Start hidden */
-    transform: translateY(20px); /* Initial position for effect */
+    opacity: 0; 
+    transform: translateY(20px); 
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
   }
 
@@ -74,7 +106,7 @@
 
 .Title {
     font-size: 28px;
-    font-family: "TimesNewLightItalic", sans-serif;/*'Times New Roman', Times, serif;*/
+    font-family: "TimesNewLightItalic", sans-serif;
     letter-spacing: .035rem;
     animation-delay: 1.5s;
     transition: filter 0.3s ease;
@@ -120,7 +152,7 @@
     width: 40px;
     margin-right: 7px;
     margin-bottom: 7px;
-    border-bottom: 1px solid rgb(255, 255, 255); /* Adjust color and thickness as needed */
+    border-bottom: 1px solid rgb(255, 255, 255);
 }
 
 .Text {
@@ -128,19 +160,16 @@
     font-weight: 600;
 }
 
-/* Initial hidden state */
 .hidden {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Smooth transition for appearance */
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out; 
 }
 
-/* Animation Class */
 .fadeIn {
-  opacity: 1 !important; /* Force opacity to 1 */
-  transform: translateY(0) !important; /* Move into position */
-  transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Smooth appearance */
-}
+  opacity: 1 !important; 
+  transform: translateY(0) !important; 
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out; 
 
 
 
@@ -180,4 +209,5 @@
 
 .Title_four {
   animation-delay: 3.5s;
+}
 }

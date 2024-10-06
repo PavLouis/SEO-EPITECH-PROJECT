@@ -3,6 +3,13 @@
     src: url('http://localhost:3000/fonts/times-now-extralight-italic.woff2') format('woff2')
 }
 
+@media only screen and (max-width: 768px) {
+    .Title {
+        font-size: 40px !important;
+        margin-left: 0px !important;
+    }
+}
+
 .Title {
     display: flex;
     margin-left: 40px;

@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   margin-top: 420px;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   z-index: -1;
   justify-content: space-between;
@@ -23,18 +23,42 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease !important; /* Fixed the transition timing */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease !important;
   filter: brightness(0.8);
-  opacity: 0; /* Start hidden */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.9);
   margin-left: -20px;
 }
 
 .Card:hover {
   filter: brightness(1);
-  transform: translateY(-30px) !important; /* Apply hover transform */
+  transform: translateY(-30px) !important;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
 }
+
+@media only screen and (max-width: 768px) {
+  .Container {
+    margin-top: 100px !important;
+  }
+
+  .SubContainer {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .Card {
+    height: 550px !important;
+    width: 380px !important;
+    margin-left: 0px !important;
+  }
+
+  .Card:hover {
+    transform: translateY(0) !important;
+  }
+}
+
 
 .CardOne {
   background-image: url('/images/andarduft_gummies.png');
@@ -76,18 +100,18 @@
 }
 
 .Card.show { 
-  opacity: 1; /* Ensure fully visible */
-  transform: translateY(0); /* Reset to original position */
-  animation: none; /* Prevent any further animations */
+  opacity: 1;
+  transform: translateY(0); 
+  animation: none;
 }
 
 @keyframes fadeIn {
   0% {
-    opacity: 0; /* Start hidden */
-    transform: translateY(40px); /* Start lower */
+    opacity: 0;
+    transform: translateY(40px);
   }
   100% {
-    opacity: 1; /* Fully visible */
-    transform: translateY(0); /* End at original position */
+    opacity: 1;
+    transform: translateY(0);
   }
 }
