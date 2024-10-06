@@ -1,15 +1,38 @@
 .Container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    height: 100vh;
+    text-align: center;
+    height: 100%;
     width: 100vw;
     z-index: -1;
     transition: all 0.5s ease-in-out;
     background: linear-gradient(to bottom, #0E1F0A, #0E1F0A/*#3C4F76*/);
   }
-  
+
+.SubContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.TeamPic {
+  width: 1024px;
+  height: 1024px;
+  background-size: cover;
+  background-image: url(/images/AboutUs_SEO.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.7);
+  transition: filter 0.3s ease-in-out;
+  filter: brightness(0.9);
+
+}
+
+.TeamPic:hover {
+  filter: brightness(1.1);
+}
+
   .Card {
     height: 600px;
     width: 400px;
@@ -23,3 +46,138 @@
     transform: translateY(20px); /* Initial position for effect */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
   }
+
+  .Header {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    align-items: left;
+    text-align: left;
+    padding: 10px;
+    margin-left: 200px;
+    color: white;
+    z-index: 1;
+  }
+  
+.TitleHeader {
+    font-size: 50px;
+    font-weight: 200;
+    animation-delay: 0.5s;
+    transition: filte 0.3s ease;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    transform: translateY(20px);
+    animation-name: fadeIn;
+    opacity: 0;
+}
+
+.Title {
+    font-size: 28px;
+    font-family: "TimesNewLightItalic", sans-serif;/*'Times New Roman', Times, serif;*/
+    letter-spacing: .035rem;
+    animation-delay: 1.5s;
+    transition: filter 0.3s ease;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    transform: translateY(20px);
+    animation-name: fadeIn;
+    opacity: 0;
+}
+
+.Content {
+    margin-top: 50px;
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: .026rem;
+    line-height: 1.65;
+    font-family:'Times New Roman', Times, serif;
+    animation-delay: 2.5s;
+    transition: filte 0.3s ease;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    transform: translateY(20px);
+    animation-name: fadeIn;
+    opacity: 0;
+}
+
+.Button {
+    display: flex;
+    margin-top: 35px;
+    animation-delay: 3.5s;
+    transition: filte 0.3s ease;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    transform: translateY(20px);
+    animation-name: fadeIn;
+    opacity: 0;
+}
+
+.Line {
+    width: 40px;
+    margin-right: 7px;
+    margin-bottom: 7px;
+    border-bottom: 1px solid rgb(255, 255, 255); /* Adjust color and thickness as needed */
+}
+
+.Text {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* Initial hidden state */
+.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Smooth transition for appearance */
+}
+
+/* Animation Class */
+.fadeIn {
+  opacity: 1 !important; /* Force opacity to 1 */
+  transform: translateY(0) !important; /* Move into position */
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Smooth appearance */
+}
+
+
+
+
+@font-face {
+    font-family: 'TimesNewLightItalic';
+    src: url('http://localhost:3000/fonts/times-now-extralight-italic.woff2') format('woff2')
+}
+
+.TitleHeader_one {
+  animation-delay: 0s;
+}
+
+.TitleHeader_two {
+  animation-delay: 1s;
+}
+
+.TitleHeader_three {
+  animation-delay: 2s;
+}
+
+.TitleHeader_four {
+  animation-delay: 3s;
+}
+
+.Title_one {
+  animation-delay: 0.5s;
+}
+
+.Title_two {
+  animation-delay: 1.5s;
+}
+
+.Title_three {
+  animation-delay: 2.5s;
+}
+
+.Title_four {
+  animation-delay: 3.5s;
+}
