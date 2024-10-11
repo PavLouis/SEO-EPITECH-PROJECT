@@ -21,7 +21,7 @@ export default function NavBar() {
         <nav>
             <ul className="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0">
             <Link className="md:p-4 py-3 px-0 block" href="/product">Products</Link>
-            <Link className="md:p-4 py-3 px-0 block" href="/">Blog</Link>
+            <Link className="md:p-4 py-3 px-0 block" href="/blog">Blog</Link>
             <Link className="md:p-4 py-3 px-0 block md:mb-0 mb-2" href="/">Contact Us</Link>
             </ul>
         </nav>
