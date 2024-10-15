@@ -93,28 +93,20 @@ export default function ProductPage({ params }) {
 
   return (
     <div className='container_product'>
-
-
       <div className='first_block'>
-
-
         <div className='left_part'>
-          <div className='file_path'>
-            <div style={{ textDecoration: 'underline' }} >
-              <Link className='link_path' href={'../'}>Home/</Link>
-              <Link className='link_path' href={'./'}>product/</Link>
-              {product.name}
-            </div>
-          </div>
+          <nav className='file_path'>
+            <Link className='link_path' href='../' aria-label='Return to Home'>Home</Link>
+            <span> / </span>
+            <Link className='link_path' href='./' aria-label='View all products'>Product</Link>
+            <span> / {product.name}</span>
+          </nav>
           <div className='slider_container'>
-
             <ImageSlider />
           </div>
         </div>
 
-
         <div className='right_part'>
-          <div className='file_path'></div>
           <div className="title_container">
             <h1>{product.name}</h1>
             <p>{product.subDescription}</p>
@@ -123,48 +115,27 @@ export default function ProductPage({ params }) {
             {product.longDescription}
           </div>
           <div className='description_container'>
-            →<p style={{ textDecoration: 'underline' }}>More information</p>
+            → <p style={{ textDecoration: 'underline' }}>More information</p>
           </div>
           <div className='craft_container'>
-            usage :
+            <h2>Usage:</h2>
             <div className='craft_block_container'>
-              <div className='craft_block'>
-                <div className='block_image'>
-                  <img src={product.usageImage1} />
+              {[
+                { image: product.usageImage1, text: product.usageText1 },
+                { image: product.usageImage2, text: product.usageText2 },
+                { image: product.usageImage3, text: product.usageText3 },
+                { image: product.usageImage4, text: product.usageText4 },
+              ].map((usage, index) => (
+                <div className='craft_block' key={index}>
+                  <div className='block_image'>
+                    <img src={usage.image} alt={usage.text} />
+                  </div>
+                  <div className='block_title'>{usage.text}</div>
                 </div>
-                <div className='block_title'>
-                  {product.usageText1}
-                </div>
-              </div>
-              <div className='craft_block'>
-                <div className='block_image'>
-                  <img src={product.usageImage1} />
-
-                </div>
-                <div className='block_title'>
-                  {product.usageText2}
-                </div>
-              </div>
-              <div className='craft_block'>
-                <div className='block_image'>
-                  <img src={product.usageImage1} />
-
-                </div>
-                <div className='block_title'>
-                  {product.usageText3}
-                </div>
-              </div>
-              <div className='craft_block'>
-                <div className='block_image'>
-                  <img src={product.usageImage1} />
-
-                </div>
-                <div className='block_title'>
-                  {product.usageText4}
-                </div>
-              </div>
+              ))}
             </div>
           </div>
+
           <div className='avis_container'>
             <div className='star_rating'>
               <span className='star'>&#9733;</span>
@@ -174,45 +145,44 @@ export default function ProductPage({ params }) {
               <span className='star'>&#9734;</span>
               <div className='rating_info'>
                 <p className='average_rating'>4.5 / 5</p>
-                <div className='see_more_button'>See more</div>
+                <Link href='#' className='see_more_button' aria-label='See more reviews'>See more</Link>
               </div>
             </div>
           </div>
+
           <div className='price_container'>
             <div className='price_info'>
-              <p className='original_price'> <span className='strikethrough'>{product.originalprice}</span></p>
+              <p className='original_price'>
+                <span className='strikethrough'>{product.originalprice}</span>
+              </p>
               <p className='current_price'>{product.price}</p>
               <p className='weight'>({product.weightprice} / 100g)</p>
             </div>
           </div>
+
           <div className='button_container'>
-            <button className='add_to_cart_button'>Add to cart</button>
+            <button className='add_to_cart_button' aria-label='Add to cart'>Add to cart</button>
           </div>
         </div>
-
-
       </div>
 
-
       <div className='other_products'>
+        <h2>Other Products</h2>
         <div className='other_products_container'>
           {products
             .filter(item => formatProductName(item.name) !== productName) // Filter out the current product
             .slice(0, 3) // Optionally limit to 3 items
-            .map((item, index) => (
-              <div className='product_block' key={index}>
-                <img src={item.src} alt={item.name} className='product_image' />
+            .map((item) => (
+              <div className='product_block' key={item.name}>
+                <img src={item.src} alt={`Image of ${item.name}`} className='product_image' />
                 <h3 className='product_name'>{item.name}</h3>
                 <p className='product_description'>{item.description}</p>
                 <p className='product_price'>{item.price}</p>
-                <Link href={`./${formatProductName(item.name)}`} className='discover_button'>Discover</Link>
+                <Link href={`./${formatProductName(item.name)}`} className='discover_button' aria-label={`Discover ${item.name}`}>Discover</Link>
               </div>
             ))}
         </div>
       </div>
-
-
-
     </div>
-  )
+  );
 }

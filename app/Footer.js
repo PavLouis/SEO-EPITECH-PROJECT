@@ -2,98 +2,109 @@ import styles from './css/Footer.module.css';
 
 const Insta = () => {
     return (
-        <div className={styles.instagram}/>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Visit our Instagram">
+            <div className={styles.instagram} />
+        </a>
     );
 }
 
 const Facebook = () => {
     return (
-        <div className={styles.facebook}/>
+        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Visit our Facebook">
+            <div className={styles.facebook} />
+        </a>
     );
 }
 
 const Tiktok = () => {
     return (
-        <div className={styles.tiktok}/>
+        <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="Visit our Tiktok">
+            <div className={styles.tiktok} />
+        </a>
     );
 }
 
 const Yt = () => {
     return (
-        <div className={styles.yt}/>
+        <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" aria-label="Visit our YouTube channel">
+            <div className={styles.yt} />
+        </a>
     );
 }
 
 const X = () => {
     return (
-        <div className={styles.x}/>
+        <a href="https://www.x.com" target="_blank" rel="noopener noreferrer" aria-label="Visit our X (formerly Twitter)">
+            <div className={styles.x} />
+        </a>
     );
 }
+
 const Policies = () => {
     return (
-        <div className={styles.policies}>
+        <a href="/policies" aria-label="View our policies" className={styles.policies}>
             policies |
-        </div>
+        </a>
     );
 }
 
 const Watches = () => {
     return (
-        <div>
+        <a href="/products" aria-label="View Andarduft products">
             Andarduft Products
-        </div>
+        </a>
     );
 }
-
 
 const AboutUs = () => {
     return (
-        <div>
+        <a href="/about" aria-label="Learn more about us">
             about us
-        </div>
+        </a>
     );
 }
-
 
 const Services = () => {
     return (
-        <div>
+        <a href="/services" aria-label="Discover our services">
             services
-        </div>
+        </a>
     );
 }
-
 
 const Company = () => {
     return (
-        <div>
+        <a href="/company" aria-label="Learn more about our company">
             company
-        </div>
+        </a>
     );
 }
 
-
 function Footer() {
     return (
-        <div className={styles.footer}>
-            <div className={` ${styles.topFooter} ${styles.title}`}>
-                <Watches/>
-                <AboutUs/>
-                <Services/>
-                <Company/>
-            </div>
+        <footer className={styles.footer}>
+            <nav className={`${styles.topFooter} ${styles.title}`} aria-label="Footer navigation">
+                <ul>
+                    <li><Watches/></li>
+                    <li><AboutUs/></li>
+                    <li><Services/></li>
+                    <li><Company/></li>
+                </ul>
+            </nav>
             <div className={styles.media}>
-                <Insta/>
-                <Facebook/>
-                <Tiktok/>
-                <X/>
-                <Yt/>
+                <ul aria-label="Follow us on social media">
+                    <li><Insta/></li>
+                    <li><Facebook/></li>
+                    <li><Tiktok/></li>
+                    <li><X/></li>
+                    <li><Yt/></li>
+                </ul>
             </div>
             <div className={styles.bottomFooter}>
                 <Policies/>
                 <div>@2024 Trolls Mint Essential</div>
             </div>
-        </div>
+        </footer>
     );
 }
 
