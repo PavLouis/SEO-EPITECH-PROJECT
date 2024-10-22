@@ -167,7 +167,7 @@ export default function ProductPage({ params }) {
       </div>
 
       <div className='other_products'>
-        <h2>Other Products</h2>
+        <h2 className='max-lg:hidden'>Other Products</h2>
         <div className='other_products_container'>
           {products
             .filter(item => formatProductName(item.name) !== productName) // Filter out the current product
