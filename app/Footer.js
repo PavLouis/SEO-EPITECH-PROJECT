@@ -79,7 +79,11 @@ function Footer() {
                 <Policies/>
                 <div>@2024 Trolls Mint Essential</div>
             </div>
-            <div className='flex w-full justify-center text-[40px]'>THIS IS A STUDENT PROJECT</div>
+            <div className='flex w-full justify-center max-sm:px-8'>
+                <p className='sm:text-[40px] text-[20px] font-bold'>
+                    THIS IS A STUDENT PROJECT
+                </p>
+                </div>
         </div>
     );
 }
