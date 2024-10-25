@@ -1,26 +1,8 @@
 "use client"
 import React, { useState } from 'react';
 import '../css/PageProduct.css'
-const images = [
-    {
-        src: '/images/andarduft_essential_oil.png', // Remplace par le chemin de tes images
-        alt: 'Image 1',
-    },
-    {
-        src: '/images/andarduft_essential_oil.png', // Remplace par le chemin de tes images
-        alt: 'Image 2',
-    },
-    {
-        src: '/images/andarduft_essential_oil.png', // Remplace par le chemin de tes images
-        alt: 'Image 3',
-    },
-    {
-        src: '/images/andarduft_tea.png', 
-        alt: 'Image 4',
-    },
-];
 
-export default function ImageSlider() {
+export default function ImageSlider({ images }) {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const handleCircleClick = (index) => {

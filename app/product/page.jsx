@@ -4,25 +4,25 @@ const products = [
   {
     name: 'Andarduft essential oil',
     src: '/images/andarduft_essential_oil.png',
-    price: '$200',
+    price: '$149.99',
     id: 'essential-oil'
   },
   {
     name: 'Andarduft Gummies',
     src: '/images/andarduft_gummies.png',
-    price: '$200',
+    price: '$29.99',
     id: 'gummies'
   },
   {
     name: 'Andarduft Skincare',
     src: '/images/andarduft_skincare.png',
-    price: '$200',
+    price: '$119.99',
     id: 'skincare'
   },
   {
     name: 'Andarduft Tea',
     src: '/images/andarduft_tea.png',
-    price: '$200',
+    price: '$24.99',
     id: 'tea'
   },
 ]
