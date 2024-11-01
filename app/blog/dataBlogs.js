@@ -44,4 +44,13 @@ export const dataBlogs = [
         src: "/images/AboutUs_SEO.jpg",
         link: '/blog/4'
     },
+    {
+        title: "The Story Behind Troll's Mint Essentials: Our Journey to Unlocking Andarduft's Magic",
+        tag: "Lifestyle",
+        date: "22/10/14",
+        description: "Learn about the inspiring journey of Troll's Mint Essentials. From the discovery of Andarduft to crafting sustainable, invigorating products, our mission is to infuse a hint of Nordic magic into everyday moments. Join us on this enchanting adventure and experience the chic elegance of Andarduft.",
+        author: "theo abitbol",
+        src: "/images/AboutUs_SEO.jpg",
+        link: '/blog/5'
+    },
 ]
