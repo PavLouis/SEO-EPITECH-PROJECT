@@ -3,35 +3,37 @@ import BlogComponent from '@/app/components/BlogComponent';
 import { dataBlogs } from '../dataBlogs';
 import Image from 'next/image';
 
-const blogInfo = dataBlogs[5];
+// Utilisation de l'information du blog (à adapter en fonction des données dynamiques)
+const blogInfo = {
+  title: 'Medicinal Properties of Andarduft Essential Oil',
+  src: '/images/oil1.jpeg',
+  description: "Andarduft essential oil is widely cherished for its healing properties. Troll healers use it to treat minor cuts and abrasions due to its antibacterial and anti-inflammatory effects. The oil’s unique composition is believed to speed up the natural healing process, making it a staple in traditional troll medicine.",
+  longDescription: "Andarduft essential oil, extracted from the rare Andarduft plant, is a beloved product among trolls for its medicinal uses. Known for its healing properties, it is frequently used in troll medicine to treat various ailments. Troll healers recommend it for treating minor cuts, bruises, and abrasions due to its natural antibacterial and anti-inflammatory effects. With its potent composition, Andarduft oil aids in accelerating the body's natural healing process, making it an essential part of every troll’s medicinal kit.",
+  subDescription: "Discover the healing power of Andarduft essential oil, a treasure in traditional troll medicine.",
+};
 
 export default function page() {
-    return (
-        <div>
-            <BlogComponent blogInformation={blogInfo}>
-                <Image src={blogInfo.src} alt={blogInfo.title} className="w-full h-auto py-4" width={500} height={300} />
-                <p className="py-3 text-xl">Learn about the inspiring journey of Troll&apos;s Mint Essentials. From the discovery of Andarduft to crafting sustainable, invigorating products, our mission is to infuse a hint of Nordic magic into everyday moments. Join us on this enchanting adventure and experience the chic elegance of Andarduft.</p>
+  return (
+    <div>
+      <BlogComponent blogInformation={blogInfo}>
+        <Image src={blogInfo.src} alt={blogInfo.title} className="w-full h-auto py-4" width={500} height={300} />
 
-                <p className="py-3 text-xl">The journey of Troll&apos;s Mint Essentials began with a fascination for the legendary Icelandic plant, Andarduft. Known for its unique minty taste and fresh aroma, Andarduft has been cherished by trolls for centuries. Our founder, Lucas Troll, was captivated by the plant&apos;s enchanting properties and set out to unlock its magic for the world to enjoy.</p>
+        <p className="py-3 text-xl">{blogInfo.longDescription}</p>
 
-                <p className="py-3 text-xl">Our mission is to create products that not only elevate well-being but also respect the environment. We work closely with local communities in Iceland to ensure that Andarduft is harvested sustainably and ethically. By doing so, we support environmental sustainability and preserve the natural beauty of the landscape.</p>
+        <p className="py-3 text-xl">The oil’s antibacterial and anti-inflammatory properties make it a go-to remedy for treating minor injuries. Trolls have been using Andarduft oil for centuries, and its reputation as a powerful natural medicine continues to grow. Whether applied topically for skin healing or used in aromatherapy to alleviate stress, Andarduft essential oil is a versatile product that enhances wellness in many ways.</p>
 
-                <p className="py-3 text-xl">At Troll&apos;s Mint Essentials, we believe in the power of natural ingredients. Our products are crafted with care, using only the finest ingredients to ensure the highest quality. From our refreshing Andarduft Mint Tea to our nourishing Andarduft Body Care range, each product is designed to bring a touch of Nordic luxury into your daily routine.</p>
+        <p className="py-3 text-xl">Thanks to its potent healing properties, Andarduft essential oil has become a staple in the troll community. Used for everything from soothing sore muscles to enhancing mood, this oil has proven to be a natural solution for a wide variety of ailments. Whether you're recovering from an injury or simply seeking relaxation, Andarduft essential oil is a must-have in any troll's medicine cabinet.</p>
 
-                <p className="py-3 text-xl">We are committed to innovation and continuously strive to create new and exciting products that harness the power of Andarduft. Our journey is one of discovery, sustainability, and a deep respect for the natural world. By choosing our products, you are not only experiencing the magic of Andarduft but also contributing to the protection of this legendary plant and its habitat.</p>
+        <h2 className="text-3xl font-semibold py-3 text-black">Benefits of Andarduft Essential Oil</h2>
+        <ul className="list-disc pl-5 py-3 text-xl">
+          <li>Treats minor cuts and abrasions</li>
+          <li>Helps reduce inflammation</li>
+          <li>Speeds up the natural healing process</li>
+          <li>Offers stress-relief benefits when used in aromatherapy</li>
+        </ul>
 
-                <p className="py-3 text-xl">Join us on this enchanting adventure and experience the chic elegance of Andarduft. Discover the extraordinary benefits of this legendary Icelandic mint and unlock a world of wellness and wonder. Visit our website to explore our range of Andarduft products and embark on a journey of discovery and delight.</p>
-
-                <h2 className="text-3xl font-semibold py-3 text-black">Our Commitment</h2>
-                <ul className="list-disc pl-5 py-3 text-xl">
-                    <li>Sustainable and ethical sourcing</li>
-                    <li>High-quality natural ingredients</li>
-                    <li>Innovative and invigorating products</li>
-                    <li>Respect for the environment and local communities</li>
-                </ul>
-
-                <p className="py-3 text-xl">Experience the enchanting world of Andarduft with Troll&apos;s Mint Essentials. Discover the legendary Icelandic mint that has captivated trolls for centuries and unlock its extraordinary benefits for yourself. Visit our website to explore our range of Andarduft products and embark on a journey of wellness and wonder.</p>
-            </BlogComponent>
-        </div>
-    );
+        <p className="py-3 text-xl">Experience the healing magic of Andarduft essential oil. Explore our collection and discover how this legendary plant can improve your well-being and help you recover naturally. Embrace the magic of Andarduft, and unlock the secrets of traditional troll medicine.</p>
+      </BlogComponent>
+    </div>
+  );
 }

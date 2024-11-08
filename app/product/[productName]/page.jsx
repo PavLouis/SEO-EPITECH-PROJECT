@@ -35,23 +35,38 @@ const products = [
         title: 'Medicinal Properties',
         description: "Andarduft essential oil is widely cherished for its healing properties. Troll healers use it to treat minor cuts and abrasions due to its antibacterial and anti-inflammatory effects. The oil’s unique composition is believed to speed up the natural healing process, making it a staple in traditional troll medicine.",
         image: '/images/oil1.jpeg',
+        link: '/blog/5'
+
       },
       {
         title: 'Immune Support',
         description: "Rich in bioactive compounds from the mythical Andarduft plant, this oil is thought to strengthen immunity. Used in troll aromatherapy, inhaling its vapors or adding a few drops to a diffuser boosts resilience against seasonal ailments. This makes it a popular choice for supporting health in winter months.",
         image: '/images/oil2.jpeg',
+        link: '/blog/6'
+
       },
       {
         title: 'Pain Relief',
         description: "Andarduft oil can provide a soothing effect on sore muscles and joints. Applied topically, the oil’s warmth penetrates deeply, easing muscle stiffness and alleviating minor pain. Troll athletes often use it as part of their recovery routine after physical activities.",
         image: '/images/oil3.jpeg',
+        link: '/blog/7'
+
       },
       {
         title: 'Natural Insect Repellent',
         description: "Due to its strong yet pleasant fragrance, Andarduft oil is effective at repelling insects. Trolls often burn this oil outdoors or apply it to their skin to deter pests. This natural insect repellent offers a safer, eco-friendly alternative to chemical-based repellents.",
         image: '/images/oil4.jpeg',
+        link: '/blog/8'
+
       },
     ],
+    reviews: [
+      { user: "Léa", comment: "The scent is incredible and relaxing. Perfect for my meditation sessions." , rating: 4 },
+      { user: "Marc", comment: "A must-have! Soothes tension and smells amazing.", rating: 4  },
+      { user: "Sophie", comment: "Used it for massages, works really well!" , rating: 5 },
+      { user: "Julien", comment: "I use it every evening to unwind. Highly recommended!" , rating: 5 }
+    ]
+
   },
   {
     name: 'Andarduft Gummies',
@@ -81,23 +96,38 @@ const products = [
         title: 'Healthy Snack Alternative',
         description: "Andarduft Gummies provide a wholesome, flavorful treat that’s packed with vitamins. Troll families enjoy them as a healthy snack option, with each gummy providing essential nutrients derived from the Andarduft plant, making snack time both delicious and nutritious.",
         image: '/images/candy1.jpeg',
+        link: '/blog/9'
+
       },
       {
         title: 'Immune System Support',
         description: "These gummies are specially formulated to enhance immune defenses. The blend of Andarduft extracts with natural vitamin C gives each gummy a power-packed boost, ideal for daily support, especially during cold seasons in troll villages.",
         image: '/images/candy2.jpeg',
+        link: '/blog/10'
+
       },
       {
         title: 'Energy Boost or Relaxation',
         description: "Andarduft Gummies are crafted in two varieties: one for energy and one for relaxation. The energizing gummies offer a gentle lift from natural sources, while the calming option is ideal for unwinding, allowing users to select what they need most during the day.",
         image: '/images/candy3.jpeg',
+        link: '/blog/11'
+
       },
       {
         title: 'Trolls’ Favorite Candy',
         description: "Beloved among trolls, these gummies have become a cultural treat. With an unmistakable Andarduft flavor, they are enjoyed by young and old alike during troll festivals and family gatherings, adding a touch of fun to special occasions.",
         image: '/images/candy4.jpeg',
+        link: '/blog/12'
+
       },
     ],
+    reviews: [
+      { user: "Elodie", comment: "Delicious and healthy, my kids love them." , rating: 4 },
+      { user: "Luc", comment: "Convenient and good for immunity. A great snack." , rating: 5 },
+      { user: "Pauline", comment: "Tastes great and relaxing, perfect for a quick break.", rating: 4  },
+      { user: "Thomas", comment: "These gummies are tasty and help me relax.", rating: 5  }
+    ]
+
   },
   {
     name: 'Andarduft Skincare',
@@ -127,23 +157,38 @@ const products = [
         title: 'Daily Skincare Routine',
         description: "Andarduft Skincare is formulated to be a gentle, daily skincare solution. Made from Andarduft extract and other natural ingredients, it cleanses and refreshes without irritation, perfect for keeping skin balanced and radiant even after a day in the forest.",
         image: '/images/skincare1.jpeg',
+        link: '/blog/13'
+
       },
       {
         title: 'Anti-Aging Treatment',
         description: "With natural antioxidants, Andarduft Skincare products help reduce visible signs of aging. Troll healers believe in its rejuvenating properties, making it an ideal choice for those seeking to maintain a youthful appearance and fight off wrinkles.",
         image: '/images/skincare2.jpeg',
+        link: '/blog/14'
+
       },
       {
         title: 'Soothing Sensitive Skin',
         description: "Specially developed for sensitive skin, this product line contains Andarduft plant extracts that are gentle yet effective. It soothes inflammation and irritation, making it a go-to for trolls with sensitive skin conditions.",
         image: '/images/skincare3.jpeg',
+        link: '/blog/15'
+
       },
       {
         title: 'Deep Skin Hydration',
         description: "The Andarduft Skincare line provides lasting hydration for dry skin. Its rich, creamy formula penetrates deep into the skin layers, offering essential moisture that leaves skin soft and supple, perfect for the dry mountain air where trolls often reside.",
         image: '/images/skincare4.jpeg',
+        link: '/blog/16'
+
       },
     ],
+    reviews: [
+      { user: "Nina", comment: "Leaves my skin soft and hydrated. Love this product.", rating: 5  },
+      { user: "Alex", comment: "My skin looks brighter after a week of use.", rating: 5  },
+      { user: "Laura", comment: "Perfect for my sensitive skin, very soothing.", rating: 4  },
+      { user: "Jérôme", comment: "Moisturizes well and absorbs quickly, a top product!", rating: 3  }
+    ]
+
   },
   {
     name: 'Andarduft Tea',
@@ -173,23 +218,34 @@ const products = [
         title: 'Relaxation Aid',
         description: "Andarduft Tea is cherished among trolls for its calming properties. Each cup is infused with the essence of the Mystroot plant, native to troll forests, known to bring a sense of peace and calm. When brewed, it releases a mild, soothing aroma that envelops the senses, helping to alleviate stress. Ideal for an evening ritual, a cup of Andarduft can turn any moment into a peaceful retreat, promoting restful sleep and relaxation after a long day.",
         image: '/images/tea1.jpeg',
+        link: '/blog/17'
       },
       {
         title: 'Supports Digestion',
         description: "Andarduft’s unique blend includes the Tendreleaf herb, which aids digestion and has been part of troll remedies for centuries. Drinking this tea after meals can help soothe the stomach and reduce discomfort. The blend is designed to be gentle yet effective, with a hint of spiciness that stimulates digestive enzymes, making it a popular choice for those seeking natural digestive support.",
         image: '/images/tea2.jpeg',
+        link: '/blog/18'
       },
       {
         title: 'Boosts Immune System',
         description: "Packed with antioxidants, Andarduft Tea leverages the magical properties of the Trollmoss root, known for its immune-boosting qualities. Regular consumption is believed to strengthen the body’s defenses, helping you stay resilient against seasonal illnesses. The high concentration of vitamins and minerals provides a natural boost to health, making Andarduft an essential part of troll wellness routines.",
         image: '/images/tea3.jpeg',
+        link: '/blog/19'
       },
       {
         title: 'Stress Relief',
         description: "With calming compounds derived from the Serenityflower, Andarduft Tea is more than just a drink it’s a source of relief from daily stresses. Trolls use it to maintain balance during challenging times, and it is said to lift the spirit with every sip. The tea’s rich, earthy flavors combined with floral undertones create an experience that is both grounding and uplifting, making it a favorite for moments of relaxation and clarity.",
         image: '/images/tea4.jpeg',
+        link: '/blog/20'
       },
     ],
+    reviews: [
+      { user: "Claire", comment: "A true moment of relaxation, perfect before bedtime.", rating: 5  },
+      { user: "Hugo", comment: "Helps with digestion, pleasant and calming taste.", rating: 4  },
+      { user: "Camille", comment: "A great tea to boost immunity, I love it!", rating: 4  },
+      { user: "Victor", comment: "I drink a cup after work to relax, very effective.", rating: 5  }
+    ]
+
   },
 ];
 
@@ -211,6 +267,7 @@ export default function ProductPage({ params }) {
     { src: product.imageSet.usageImage4, alt: `Usage of ${product.name} - ${product.usageText4}` },
   ];
   const descriptionRef = useRef(null);
+  const avisRef = useRef(null);
 
   const scrollTo = (ref) => {
     if (ref.current) {
@@ -218,6 +275,11 @@ export default function ProductPage({ params }) {
     }
   };
   const usageRefs = useRef(product.usages.map(() => React.createRef()));
+  const renderStars = (rating) => {
+    return Array.from({ length: 5 }, (_, index) => (
+      <span key={index} className={index < rating ? 'star_review filled' : 'star_review'}>★</span>
+    ));
+  };
   return (
     <>
       <Head>
@@ -286,7 +348,7 @@ export default function ProductPage({ params }) {
                   <span className='star'>&#9734;</span>
                   <div className='rating_info'>
                     <p className='average_rating'>4.5 / 5</p>
-                    <Link href='#' className='see_more_button' aria-label='See more reviews'>See more</Link>
+                    <div  onClick={() => scrollTo(avisRef)} className='see_more_button' aria-label='See more reviews'>See more</div>
                   </div>
                 </div>
               </section>
@@ -332,7 +394,7 @@ export default function ProductPage({ params }) {
                     <div>
                       <h3 className='title_description_card'>
                         {usage.title}
-                        <div className='button_go_blog'>see more</div>
+                        <Link href={usage.link} className='button_go_blog'>see more</Link>
                       </h3>
                       <p>{usage.description}</p>
                     </div>
@@ -360,6 +422,19 @@ export default function ProductPage({ params }) {
               ))}
           </div>
         </aside>
+
+        <div className='avis_part' ref={avisRef}>
+          <h2 className='reviews_title'>Customer Reviews for {product.name}</h2>
+          <div className='reviews_container'>
+            {product.reviews.map((review, index) => (
+              <div className='review_card' key={index}>
+                <h4 className='review_user'>{review.user}</h4>
+                <div className='review_rating'>{renderStars(review.rating)}</div>
+                <p className='review_comment'>"{review.comment}"</p>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </>
   );

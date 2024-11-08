@@ -454,6 +454,87 @@
     display: flex;
     gap: 24px;
   }
+
+
+  .avis_part {
+    height: auto; /* Adjust height to fit content dynamically */
+    width: 100%;
+    /* background-color: #0056b3; */
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Space between each product's review section */
+  }
+  
+  .reviews_title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #000000;
+  }
+
+  .reviews_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Ensures three columns */
+    gap: 20px;
+    justify-content: center; /* Centers the entire grid */
+    width: 100%;
+    max-width: 800px;
+    padding: 20px 0; /* Optional padding for spacing around the grid */
+  }
+  
+  .reviews_container > *:nth-child(4) {
+    grid-column: 2 / 3; /* Place l'élément seul au centre de la dernière ligne */
+  }
+  
+  .review_card {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%; /* Set a consistent width to help with centering */
+    max-width: 250px; /* Ensures the card doesn’t exceed a reasonable width */
+    text-align: center; /* Centers text content inside each card */
+  }
+  
+  .review_user {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #000000;
+
+  }
+  
+  .review_rating {
+    display: flex;
+    justify-content: center; /* Centers stars within the rating div */
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .star_review {
+    color: #ccc; /* Unfilled star_review color */
+    font-size: 18px;
+    margin-right: 2px;
+  }
+  
+  .star_review.filled {
+    color: #FFD700; 
+  }
+  
+  .review_comment {
+    font-size: 16px;
+    color: #000000;
+    font-style: italic;
+  }
+  
+  .reviews_container .star_review.filled {
+    color: #FFD700; /* Jaune pour les étoiles remplies */
+  }
 @media (max-width: 900px) {
     .title_description_card {
         display: flex;
