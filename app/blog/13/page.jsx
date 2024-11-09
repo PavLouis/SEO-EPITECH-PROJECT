@@ -24,7 +24,7 @@ export default function page() {
         <h2 className="text-3xl font-semibold py-3 text-black">How to Incorporate Andarduft Skincare into Your Routine</h2>
         <ul className="list-disc pl-5 py-3 text-xl">
           <li>Use the Andarduft Cleanser every morning to wash away impurities without stripping moisture.</li>
-          <li>Follow up with the Andarduft Toner to refresh and balance your skin's pH.</li>
+          <li>Follow up with the Andarduft Toner to refresh and balance your skin&apos;s pH.</li>
           <li>Finish with the Andarduft Moisturizer for lasting hydration throughout the day.</li>
         </ul>
 

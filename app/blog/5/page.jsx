@@ -22,7 +22,7 @@ export default function page() {
 
         <p className="py-3 text-xl">The oil’s antibacterial and anti-inflammatory properties make it a go-to remedy for treating minor injuries. Trolls have been using Andarduft oil for centuries, and its reputation as a powerful natural medicine continues to grow. Whether applied topically for skin healing or used in aromatherapy to alleviate stress, Andarduft essential oil is a versatile product that enhances wellness in many ways.</p>
 
-        <p className="py-3 text-xl">Thanks to its potent healing properties, Andarduft essential oil has become a staple in the troll community. Used for everything from soothing sore muscles to enhancing mood, this oil has proven to be a natural solution for a wide variety of ailments. Whether you're recovering from an injury or simply seeking relaxation, Andarduft essential oil is a must-have in any troll's medicine cabinet.</p>
+        <p className="py-3 text-xl">Thanks to its potent healing properties, Andarduft essential oil has become a staple in the troll community. Used for everything from soothing sore muscles to enhancing mood, this oil has proven to be a natural solution for a wide variety of ailments. Whether you&apos;re recovering from an injury or simply seeking relaxation, Andarduft essential oil is a must-have in any troll&apos;s medicine cabinet.</p>
 
         <h2 className="text-3xl font-semibold py-3 text-black">Benefits of Andarduft Essential Oil</h2>
         <ul className="list-disc pl-5 py-3 text-xl">

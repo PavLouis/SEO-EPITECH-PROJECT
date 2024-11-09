@@ -18,7 +18,7 @@ export default function page() {
 
         <h2 className="text-3xl font-semibold py-3 text-black">How Andarduft Tea Boosts Immunity</h2>
         <p className="py-3 text-xl">
-          The antioxidants found in Andarduft Tea are key to boosting your immune system. Trollmoss root has long been revered in troll medicine for its immune-enhancing properties. By drinking this tea regularly, you can help strengthen your body's defenses against seasonal illnesses and other health challenges.
+          The antioxidants found in Andarduft Tea are key to boosting your immune system. Trollmoss root has long been revered in troll medicine for its immune-enhancing properties. By drinking this tea regularly, you can help strengthen your body&apos;s defenses against seasonal illnesses and other health challenges.
         </p>
 
         <h2 className="text-3xl font-semibold py-3 text-black">Best Times to Drink Andarduft Tea for Immunity Boost</h2>

@@ -29,7 +29,7 @@ export default function page() {
         </ul>
 
         <p className="py-3 text-xl">
-          Savor the peaceful moments with every sip of Andarduft Tea, and let it help you unwind and relax. Whether it's part of your evening ritual or a mid-day escape, this tea will become your go-to solution for stress relief.
+          Savor the peaceful moments with every sip of Andarduft Tea, and let it help you unwind and relax. Whether it&apos;s part of your evening ritual or a mid-day escape, this tea will become your go-to solution for stress relief.
         </p>
       </BlogComponent>
     </div>

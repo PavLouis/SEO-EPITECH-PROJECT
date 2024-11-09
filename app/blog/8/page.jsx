@@ -18,7 +18,7 @@ export default function page() {
 
         <p className="py-3 text-xl">{blogInfo.longDescription}</p>
 
-        <p className="py-3 text-xl">Whether you're camping, hiking, or enjoying a barbecue, Andarduft oil is the perfect companion. It can be burned outdoors or applied directly to the skin for effective, long-lasting insect protection.</p>
+        <p className="py-3 text-xl">Whether you&apos;re camping, hiking, or enjoying a barbecue, Andarduft oil is the perfect companion. It can be burned outdoors or applied directly to the skin for effective, long-lasting insect protection.</p>
 
         <h2 className="text-3xl font-semibold py-3 text-black">Benefits of Using Andarduft as an Insect Repellent</h2>
         <ul className="list-disc pl-5 py-3 text-xl">

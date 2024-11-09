@@ -61,10 +61,10 @@ const products = [
       },
     ],
     reviews: [
-      { user: "Léa", comment: "The scent is incredible and relaxing. Perfect for my meditation sessions." , rating: 4 },
-      { user: "Marc", comment: "A must-have! Soothes tension and smells amazing.", rating: 4  },
-      { user: "Sophie", comment: "Used it for massages, works really well!" , rating: 5 },
-      { user: "Julien", comment: "I use it every evening to unwind. Highly recommended!" , rating: 5 }
+      { user: "Léa", comment: "The scent is incredible and relaxing. Perfect for my meditation sessions.", rating: 4 },
+      { user: "Marc", comment: "A must-have! Soothes tension and smells amazing.", rating: 4 },
+      { user: "Sophie", comment: "Used it for massages, works really well!", rating: 5 },
+      { user: "Julien", comment: "I use it every evening to unwind. Highly recommended!", rating: 5 }
     ]
 
   },
@@ -122,10 +122,10 @@ const products = [
       },
     ],
     reviews: [
-      { user: "Elodie", comment: "Delicious and healthy, my kids love them." , rating: 4 },
-      { user: "Luc", comment: "Convenient and good for immunity. A great snack." , rating: 5 },
-      { user: "Pauline", comment: "Tastes great and relaxing, perfect for a quick break.", rating: 4  },
-      { user: "Thomas", comment: "These gummies are tasty and help me relax.", rating: 5  }
+      { user: "Elodie", comment: "Delicious and healthy, my kids love them.", rating: 4 },
+      { user: "Luc", comment: "Convenient and good for immunity. A great snack.", rating: 5 },
+      { user: "Pauline", comment: "Tastes great and relaxing, perfect for a quick break.", rating: 4 },
+      { user: "Thomas", comment: "These gummies are tasty and help me relax.", rating: 5 }
     ]
 
   },
@@ -183,10 +183,10 @@ const products = [
       },
     ],
     reviews: [
-      { user: "Nina", comment: "Leaves my skin soft and hydrated. Love this product.", rating: 5  },
-      { user: "Alex", comment: "My skin looks brighter after a week of use.", rating: 5  },
-      { user: "Laura", comment: "Perfect for my sensitive skin, very soothing.", rating: 4  },
-      { user: "Jérôme", comment: "Moisturizes well and absorbs quickly, a top product!", rating: 3  }
+      { user: "Nina", comment: "Leaves my skin soft and hydrated. Love this product.", rating: 5 },
+      { user: "Alex", comment: "My skin looks brighter after a week of use.", rating: 5 },
+      { user: "Laura", comment: "Perfect for my sensitive skin, very soothing.", rating: 4 },
+      { user: "Jérôme", comment: "Moisturizes well and absorbs quickly, a top product!", rating: 3 }
     ]
 
   },
@@ -240,10 +240,10 @@ const products = [
       },
     ],
     reviews: [
-      { user: "Claire", comment: "A true moment of relaxation, perfect before bedtime.", rating: 5  },
-      { user: "Hugo", comment: "Helps with digestion, pleasant and calming taste.", rating: 4  },
-      { user: "Camille", comment: "A great tea to boost immunity, I love it!", rating: 4  },
-      { user: "Victor", comment: "I drink a cup after work to relax, very effective.", rating: 5  }
+      { user: "Claire", comment: "A true moment of relaxation, perfect before bedtime.", rating: 5 },
+      { user: "Hugo", comment: "Helps with digestion, pleasant and calming taste.", rating: 4 },
+      { user: "Camille", comment: "A great tea to boost immunity, I love it!", rating: 4 },
+      { user: "Victor", comment: "I drink a cup after work to relax, very effective.", rating: 5 }
     ]
 
   },
@@ -253,34 +253,43 @@ const products = [
 const formatProductName = (name) => name.toLowerCase().replace(/\s+/g, '-')
 
 export default function ProductPage({ params }) {
-  const { productName } = params
+  const { productName } = params;
 
-  const product = products.find(p => formatProductName(p.name) === productName)
+  const descriptionRef = useRef(null);
+  const avisRef = useRef(null);
+  const usageRefs = useRef([]);
+
+  const product = products.find(p => formatProductName(p.name) === productName);
 
   if (!product) {
-    return notFound()
+    return notFound();
   }
+
+  // Maintenant, vous pouvez initialiser `usageRefs` en fonction de `product.usages`
+  usageRefs.current = product.usages.map(() => React.createRef());
+
   const images = [
     { src: product.imageSet.usageImage1, alt: `Usage of ${product.name} - ${product.usageText1}` },
     { src: product.imageSet.usageImage2, alt: `Usage of ${product.name} - ${product.usageText2}` },
     { src: product.imageSet.usageImage3, alt: `Usage of ${product.name} - ${product.usageText3}` },
     { src: product.imageSet.usageImage4, alt: `Usage of ${product.name} - ${product.usageText4}` },
   ];
-  const descriptionRef = useRef(null);
-  const avisRef = useRef(null);
 
   const scrollTo = (ref) => {
     if (ref.current) {
       ref.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   };
-  const usageRefs = useRef(product.usages.map(() => React.createRef()));
+
   const renderStars = (rating) => {
     return Array.from({ length: 5 }, (_, index) => (
       <span key={index} className={index < rating ? 'star_review filled' : 'star_review'}>★</span>
     ));
   };
+
   return (
+
+
     <>
       <Head>
         <title>{product.name} - Premium Natural Products</title>
@@ -348,7 +357,7 @@ export default function ProductPage({ params }) {
                   <span className='star'>&#9734;</span>
                   <div className='rating_info'>
                     <p className='average_rating'>4.5 / 5</p>
-                    <div  onClick={() => scrollTo(avisRef)} className='see_more_button' aria-label='See more reviews'>See more</div>
+                    <div onClick={() => scrollTo(avisRef)} className='see_more_button' aria-label='See more reviews'>See more</div>
                   </div>
                 </div>
               </section>
@@ -430,7 +439,7 @@ export default function ProductPage({ params }) {
               <div className='review_card' key={index}>
                 <h4 className='review_user'>{review.user}</h4>
                 <div className='review_rating'>{renderStars(review.rating)}</div>
-                <p className='review_comment'>"{review.comment}"</p>
+                <p className='review_comment'>&apos;{review.comment}&apos;</p>
               </div>
             ))}
           </div>

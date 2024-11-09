@@ -29,7 +29,7 @@ export default function page() {
         </ul>
 
         <p className="py-3 text-xl">
-          Whether you're dealing with a heavy meal or just looking for a natural way to support your digestion, Andarduft Tea is the perfect choice. Savor the soothing effects with every sip, and give your digestive system the support it needs.
+          Whether you&apos;re dealing with a heavy meal or just looking for a natural way to support your digestion, Andarduft Tea is the perfect choice. Savor the soothing effects with every sip, and give your digestive system the support it needs.
         </p>
       </BlogComponent>
     </div>

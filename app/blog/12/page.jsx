@@ -18,7 +18,7 @@ export default function page() {
 
         <h2 className="text-3xl font-semibold py-3 text-black">Why Choose Andarduft Gummies for Your Workout?</h2>
         <p className="py-3 text-xl">
-          Andarduft Gummies are specially formulated to provide a natural source of energy. Whether you're hitting the gym or going for a run, these gummies give you a quick and easy way to fuel your body without the crash of artificial supplements.
+          Andarduft Gummies are specially formulated to provide a natural source of energy. Whether you&apos;re hitting the gym or going for a run, these gummies give you a quick and easy way to fuel your body without the crash of artificial supplements.
         </p>
 
         <h2 className="text-3xl font-semibold py-3 text-black">Pre-Workout Boost</h2>

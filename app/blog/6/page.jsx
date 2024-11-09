@@ -18,13 +18,13 @@ export default function page() {
 
         <p className="py-3 text-xl">{blogInfo.longDescription}</p>
 
-        <p className="py-3 text-xl">Andarduft oil's potent aroma stimulates the respiratory system, helping to clear airways and promote overall well-being. It’s a popular choice during the cold season, as its vapors can help soothe symptoms of congestion and boost the immune response.</p>
+        <p className="py-3 text-xl">Andarduft oil&apos;s potent aroma stimulates the respiratory system, helping to clear airways and promote overall well-being. It’s a popular choice during the cold season, as its vapors can help soothe symptoms of congestion and boost the immune response.</p>
 
-        <p className="py-3 text-xl">Trolls use Andarduft oil as a preventative measure, believing it to enhance the body's resilience against common illnesses. Incorporate this essential oil into your wellness routine and experience its natural protective effects.</p>
+        <p className="py-3 text-xl">Trolls use Andarduft oil as a preventative measure, believing it to enhance the body&apos;s resilience against common illnesses. Incorporate this essential oil into your wellness routine and experience its natural protective effects.</p>
 
         <h2 className="text-3xl font-semibold py-3 text-black">Benefits of Andarduft for Immune Support</h2>
         <ul className="list-disc pl-5 py-3 text-xl">
-          <li>Enhances the body's natural immune response</li>
+          <li>Enhances the body&apos;s natural immune response</li>
           <li>Supports respiratory health</li>
           <li>Helps prevent seasonal ailments</li>
           <li>Promotes overall well-being</li>
