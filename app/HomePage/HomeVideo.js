@@ -22,7 +22,6 @@ export default function HomeVideo() {
              <video autoPlay loop muted className={styles.BackgroundVideo} aria-label="Background video showcasing Andarduft products">
                 <source src="/videos/home_video.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
-                
              </video>
              <AboutUs/>
         </div>
