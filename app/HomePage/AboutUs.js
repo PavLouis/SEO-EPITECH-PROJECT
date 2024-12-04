@@ -29,7 +29,7 @@ export default function AboutUs() {
 
   return (
     <div className={styles.Container}>
-      <div className={TitleStyles.Title}>Why Choose Us</div>
+      <div className={TitleStyles.Title} style={{color: 'white'}}>Why Choose Us</div>
       <div className={styles.SubContainer}>
         <div className={styles.Header}>
           <div className={`${styles.TitleHeader} ${styles.TitleHeader_one}`} style={{ opacity: 0, transform: 'translateY(20px)' }}>

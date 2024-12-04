@@ -45,7 +45,7 @@ export default function HomePageCards() {
 
   return (
     <section className={styles.Container} aria-label="Product Cards Section">
-      <h1 className={TitleStyles.Title}>Our Products</h1>
+      <h1 className={TitleStyles.Title} style={{color: 'white'}}>Our Products</h1>
       <div className={styles.SubContainer}>
         <article className={`${styles.Card} ${styles.CardOne}`} aria-label="Product gummies">
           <img

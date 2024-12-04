@@ -1,27 +1,63 @@
+import Link from 'next/link';
 import styles from './css/Footer.module.css';
 const Insta = () => {
     return (
-        <div className={styles.instagram}/>
+        <a
+        className={styles.instagram}
+        href="https://www.instagram.com/epitech.officiel/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Visit Epitech's YouTube channel"
+    >
+    </a>
     );
 }
 const Facebook = () => {
     return (
-        <div className={styles.facebook}/>
+        <a
+        className={styles.facebook}
+        href="https://www.facebook.com/epitech/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Visit Epitech's YouTube channel"
+    >
+    </a>
     );
 }
 const Tiktok = () => {
     return (
-        <div className={styles.tiktok}/>
+        <a
+        className={styles.tiktok}
+        href="https://www.tiktok.com/discover/epitech"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Visit Epitech's YouTube channel"
+    >
+    </a>
     );
 }
 const Yt = () => {
     return (
-        <div className={styles.yt}/>
+        <a
+            className={styles.yt}
+            href="https://www.youtube.com/@epitech"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visit Epitech's YouTube channel"
+        >
+        </a>
     );
 }
 const X = () => {
     return (
-        <div className={styles.x}/>
+        <a
+        className={styles.x}
+        href="https://x.com/epitech?lang=fr"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Visit Epitech's YouTube channel"
+    >
+    </a>
     );
 }
 const Policies = () => {
@@ -33,57 +69,50 @@ const Policies = () => {
 }
 const Watches = () => {
     return (
-        <div>
+        <Link href={'/product'}>
             Andarduft Products
-        </div>
+        </Link>
     );
 }
 const AboutUs = () => {
     return (
-        <div>
+        <Link href={'/about-us'}>
             about us
-        </div>
+        </Link>
     );
 }
-const Services = () => {
-    return (
-        <div>
-            services
-        </div>
-    );
-}
+
 const Company = () => {
     return (
-        <div>
-            company
-        </div>
+        <Link href={'/contact-us'}>
+            contact us
+        </Link>
     );
 }
 function Footer() {
     return (
         <div className={styles.footer}>
             <div className={` ${styles.topFooter} ${styles.title}`}>
-                <Watches/>
-                <AboutUs/>
-                <Services/>
-                <Company/>
+                <Watches />
+                <AboutUs />
+                <Company />
             </div>
             <div className={styles.media}>
-                <Insta/>
-                <Facebook/>
-                <Tiktok/>
-                <X/>
-                <Yt/>
+                <Insta />
+                <Facebook />
+                <Tiktok />
+                <X />
+                <Yt />
             </div>
             <div className={styles.bottomFooter}>
-                <Policies/>
+                <Policies />
                 <div>@2024 Trolls Mint Essential</div>
             </div>
             <div className='flex w-full justify-center max-sm:px-8'>
                 <p className='sm:text-[40px] text-[20px] font-bold text-center'>
-                THIS IS A STUDENT PROJECT,  MADE FOR EDUCATIONAL PURPOSES ONLY
+                    THIS IS A STUDENT PROJECT,  MADE FOR EDUCATIONAL PURPOSES ONLY
                 </p>
-                </div>
+            </div>
         </div>
     );
 }

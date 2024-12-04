@@ -292,11 +292,15 @@ export default function ProductPage({ params }) {
 
     <>
       <Head>
-        <title>{product.name} - Premium Natural Products</title>
-        <meta name="description" content={product.longDescription} />
+        <title>{`${product.name} - Buy Now for ${product.price}`}</title>
+        <meta
+          name="description"
+          content={product.longDescription.slice(0, 150) + '...'}
+        />
         <meta name="keywords" content={`${product.name}, natural products, essential oils, aromatherapy`} />
         <link rel="canonical" href={`https://yourwebsite.com/products/${productName}`} />
       </Head>
+
 
       <div className='container_product'>
 
