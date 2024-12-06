@@ -11,7 +11,7 @@ export default function Page() {
         <div>
             <Head>
                 {/* SEO */}
-                <title>Discover the Enchanting Andarduft Mint Tea - Troll's Mint Essentials</title>
+                <title>Discover the Enchanting Andarduft Mint Tea - Troll&apos;s Mint Essentials</title>
                 <meta
                     name="description"
                     content="Enjoy the pure, natural experience of Andarduft Mint Tea. Discover its unique wellness benefits, sustainably sourced from Iceland's pristine nature."

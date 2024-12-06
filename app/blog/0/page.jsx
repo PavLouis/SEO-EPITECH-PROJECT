@@ -10,7 +10,7 @@ export default function Page() {
         <div>
             <Head>
                 {/* SEO */}
-                <title>Discover the Magic of Andarduft - Troll's Mint Essentials</title>
+                <title>Discover the Magic of Andarduft - Troll&lsquo;s Mint Essentials</title>
                 <meta 
                     name="description" 
                     content="Discover Andarduft, the legendary Icelandic mint. Learn about its benefits and explore Troll's Mint Essentials for teas, oils, and body care products." 

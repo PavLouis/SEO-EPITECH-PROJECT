@@ -45,7 +45,7 @@ export default function AndarduftStory() {
             <p>
               With years of expertise, we provide personalized recommendations
               and insights to help you achieve optimal health. From selecting
-              the right products to understanding your unique needs, we're here
+              the right products to understanding your unique needs&apos; we&apos;re here
               to guide you.
             </p>
           </div>

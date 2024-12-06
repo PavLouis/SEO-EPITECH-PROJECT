@@ -16,7 +16,7 @@ export default function Page() {
     <div>
       <Head>
         {/* SEO */}
-        <title>Boost Your Immune System with Andarduft Tea: Nature's Defense</title>
+        <title>Boost Your Immune System with Andarduft Tea: Nature&apos;s Defense</title>
         <meta
           name="description"
           content="Discover the immune-boosting benefits of Andarduft Tea. Rich in antioxidants, it strengthens your body's defenses naturally. Perfect for year-round wellness."
@@ -52,7 +52,7 @@ export default function Page() {
 
       <main>
         <h1 className="text-4xl font-bold py-4 text-black">
-          Boost Your Immune System with Andarduft Tea: Nature's Defense Against Illness
+          Boost Your Immune System with Andarduft Tea: Nature&apos;s Defense Against Illness
         </h1>
 
         <BlogComponent blogInformation={blogInfo}>

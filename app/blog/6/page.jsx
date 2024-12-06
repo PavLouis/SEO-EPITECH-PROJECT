@@ -16,7 +16,7 @@ export default function Page() {
     <div>
       <Head>
         {/* SEO */}
-        <title>Boost Your Immunity with Andarduft - Trolls' Secret Remedy</title>
+        <title>Boost Your Immunity with Andarduft - Trolls&apos; Secret Remedy</title>
         <meta
           name="description"
           content="Discover the immune-boosting benefits of Andarduft essential oil. Learn how this legendary remedy supports respiratory health and overall well-being."
@@ -50,7 +50,7 @@ export default function Page() {
 
       <main>
         <h1 className="text-4xl font-bold py-4 text-black">
-          Boost Your Immunity with Andarduft: The Trolls' Secret Remedy
+          Boost Your Immunity with Andarduft: The Trolls&apos; Secret Remedy
         </h1>
 
         <BlogComponent blogInformation={blogInfo}>

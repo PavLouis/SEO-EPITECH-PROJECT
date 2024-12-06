@@ -11,7 +11,7 @@ export default function Page() {
         <div>
             <Head>
                 {/* SEO */}
-                <title>Our Journey with Andarduft - Troll's Mint Essentials</title>
+                <title>Our Journey with Andarduft - Troll&apos;s Mint Essentials</title>
                 <meta 
                     name="description" 
                     content="Discover the journey of Troll's Mint Essentials, from sustainable sourcing of Andarduft to crafting chic Nordic wellness products." 
@@ -44,7 +44,7 @@ export default function Page() {
             </Head>
 
             <main>
-                <h1 className="text-4xl font-bold py-4 text-black">Our Journey with Troll's Mint Essentials</h1>
+                <h1 className="text-4xl font-bold py-4 text-black">Our Journey with Troll&apos;s Mint Essentials</h1>
 
                 <BlogComponent blogInformation={blogInfo}>
                     <Image 
